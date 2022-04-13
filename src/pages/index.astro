@@ -7,13 +7,21 @@
 	</head>
 
 	<body>
-    <div class="py-8 bg-[#FFFBEA] h-screen">
-		<nav class="relative lg:max-w-[calc(100%-30%)] flex justify-center space-x-10 bg-gradient-to-tr from-[#F0B429] to-[#FADB5F] max-w-md mx-auto h-14 items-center flex-wrap rounded-lg mb-10 font-medium decoration-[3px]">
+    <div class="py-8 bg h-screen bg-cover bg-opacity-40 bg-[#FFFBEA]">
+	<div class="items-center max-w-sm mx-auto justify-start md:max-w-md lg:max-w-[calc(100%-30%)] hidden lg:flex">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="" height="50px" width="50px" class="my-4">
+	<h1 class="font-semibold text-xl text-left ml-5">Adome Photostore</h1>
+	</div>
+		<div class="flex items-center max-w-sm mx-auto justify-start md:max-w-md lg:max-w-[calc(100%-30%)] ml-6 lg:hidden">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="" height="50px" width="50px" class="my-4">
+	<h1 class="font-semibold text-xl text-left ml-5">Adome Photostore</h1>
+	</div>
+		<nav class="relative lg:max-w-[calc(100%-30%)] flex flex-col justify-center lg:space-x-10 bg-gradient-to-tr from-[#F0B429] to-[#FADB5F] max-w-sm mx-auto lg:h-14 items-center flex-wrap rounded-lg mb-10 font-medium decoration-[3px] md:max-w-md h-50 py-10 space-y-10 lg:flex-row lg:space-y-0 lg:py-0">
 			<a href="/" class="hover:underline-offset-1 decoration-cyan-900 underline hover:text-[#FFFBEA] font-bold">Home</a>
 			<a href="/pricing" class="hover:underline-offset-1 decoration-cyan-900 hover:underline hover:text-[#FFFBEA]">Pricing</a>
 			<a href="/blog" class="hover:underline-offset-1 decoration-cyan-900 hover:underline hover:text-[#FFFBEA]">Blog</a>
 			<a href="#" class="hover:underline-offset-1 decoration-cyan-900 hover:underline hover:text-[#FFFBEA">Login</a>
-			<a href="/pricing" class="ml-10 inline bg-white py-2 px-4 rounded-xl hover:text-yellow-500 hover:py-3 hover:px-5 duration-300 mr">Sign up</a>
+			<a href="/pricing" class="lg:ml-10 inline bg-white py-2 px-4 rounded-xl hover:text-yellow-500 hover:py-3 hover:px-5 duration-300">Sign up</a>
 		</nav>
       <h1 class="text-center text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
         Adome Photostore
