@@ -1,34 +1,10 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Blog - Adome Photostore</title>
-	</head>
-
-	<body>
-    <div class="py-8 bg-[#FFFBEA] h-auto">
-		<div class="items-center max-w-sm mx-auto justify-start md:max-w-md lg:max-w-[calc(100%-30%)] hidden lg:flex">
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="" height="50px" width="50px" class="my-4">
-	<h1 class="font-semibold text-xl text-left ml-5">Adome Photostore</h1>
-	</div>
-		<div class="flex items-center max-w-sm mx-auto justify-start md:max-w-md lg:max-w-[calc(100%-30%)] ml-6 lg:hidden">
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="" height="50px" width="50px" class="my-4">
-	<h1 class="font-semibold text-xl text-left ml-5">Adome Photostore</h1>
-	</div>
-<nav class="relative lg:max-w-[calc(100%-30%)] flex flex-col justify-center lg:space-x-10 bg-gradient-to-tr from-[#F0B429] to-[#FADB5F] max-w-sm mx-auto lg:h-14 items-center flex-wrap rounded-lg mb-10 font-medium decoration-[3px] md:max-w-md h-50 py-10 space-y-10 lg:flex-row lg:space-y-0 lg:py-0">
-			<a href="/" class="hover:underline-offset-1 decoration-cyan-900 hover:underline hover:text-[#FFFBEA]">Home</a>
-			<a href="/pricing" class="hover:underline-offset-1 decoration-cyan-900 hover:underline hover:text-[#FFFBEA]">Pricing</a>
-			<a href="#" class="hover:underline-offset-1 decoration-cyan-900 underline hover:text-[#FFFBEA] font-bold">Blog</a>
-			<a href="#" class="hover:underline-offset-1 decoration-cyan-900 hover:underline hover:text-[#FFFBEA">Login</a>
-			<a href="/pricing" class="lg:ml-10 inline bg-white py-2 px-4 rounded-xl hover:text-yellow-500 hover:py-3 hover:px-5 duration-300">Sign up</a>
-		</nav>
-      <h1 class="text-center text-3xl mb-10 font-extrabold tracking-tight text-gray-900">
-        Blog
-			</h1>
-			<div class="space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 max-w-[20rem] mx-auto mt-10 lg:max-w-2xl">
+---
+import Layout from './layouts/common.astro'
+---
+	<Layout title="Blog">
+	<div class="space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 max-w-[20rem] mx-auto mt-10 lg:max-w-2xl">
 			<div class="p-8 border border-gray-300 rounded-2xl shadow-sm flex flex-col">
-		<h3 class="text-3xl font-semibold text-gray-900 mt-4">Second Blog</h3>
+		<h3 class="text-3xl font-semibold text-gray-900">Second Blog</h3>
 
 		<p class="mt-6 mx-auto">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at mattis arcu. Ut maximus eleifend lectus sed fringilla. Etiam eu odio id massa tempor fermentum at nec erat. Cras et felis a augue vulputate blandit eu a mauris. Proin tincidunt vestibulum sem, eu ullamcorper sapien scelerisque vel. Nunc nec augue nec nunc rutrum mollis nec eu purus. Nulla facilisi...
@@ -36,7 +12,7 @@
 		<p class="mt-4">Author: <span class="font-medium">Fully Integrated</span></p>
 	</div>
 				<div class="p-8 border border-gray-300 rounded-2xl shadow-sm flex flex-col">
-		<h3 class="text-3xl font-semibold text-gray-900 mt-4">First Blog</h3>
+		<h3 class="text-3xl font-semibold text-gray-900">First Blog</h3>
 
 		<p class="mt-6 mx-auto">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at mattis arcu. Ut maximus eleifend lectus sed fringilla. Etiam eu odio id massa tempor fermentum at nec erat. Cras et felis a augue vulputate blandit eu a mauris. Proin tincidunt vestibulum sem, eu ullamcorper sapien scelerisque vel. Nunc nec augue nec nunc rutrum mollis nec eu purus. Nulla facilisi...
@@ -45,14 +21,4 @@
 	</div>
 
 			</div>
-<footer class="text-center mt-20 pt-12 border-t-2 border-gray-300 h-64 bg-[#FFF3C4] pb-10 -mb-10">
-<nav class="flex justify-center pb-10 space-x-10 mt-10">
-		<a href="/" class="font-medium text-gray-500 hover:text-gray-900 hover:duration-1000">Home</a>
-		<a href="#features" class="font-medium text-gray-500 hover:text-gray-900 hover:duration-1000">Features</a>
-		<a href="/pricing" class="font-medium text-gray-500 hover:text-gray-900 hover:duration-1000">Pricing</a>
-	</nav>
-<p class="text-gray-400 py-3">©2022 Week 2 Project Website. Built by <span class="font-medium hover:text-lg duration-500 text-black"> Fully Integrated</span></p>
-</footer>
-</div>
-	</body>
-</html>
+	</Layout>
